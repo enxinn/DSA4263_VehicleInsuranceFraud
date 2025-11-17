@@ -1,0 +1,7 @@
+services:
+  fraud_app:
+    build: .
+    container_name: fraud_detection_app
+    ports:
+      - "80:5000"
+    restart: always
