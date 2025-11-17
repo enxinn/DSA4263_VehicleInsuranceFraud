@@ -1,0 +1,100 @@
+<html>
+<body>
+    <h3>Income Prediction Form</h3>
+
+<div>
+  <form action="/result" method="POST">
+    <label for="PolicyNumber">Policy Number</label>
+    <input type="number" id="PolicyNumber" name="PolicyNumber">
+    <br>
+    <label for="Age">Age</label>
+    <input type="number" id="Age" name="Age" min = "1" max = "99">[btw: 1 - 99]
+    <br>
+    <label for="RepNumber">RepNumber</label>
+    <input type="number" id="RepNumber" name="RepNumber" min = "1" max = "20">[btw: 1 - 20]
+    <br>
+    <label for="Month">Month</label>
+    <input type="number" id="Month" name="Month" min = "1" max = "12">[btw: 1 - 12]
+    <br>
+    <label for="Make_label_encoded">Make</label>
+    <select id="Make_label_encoded" name="Make_label_encoded">
+      <option value=0>Accura</option>
+      <option value=1>BMW</option>
+      <option value=2>Chevrolet</option>
+      <option value=3>Dodge</option>
+      <option value=4>Ferrari</option>
+      <option value=5>Ford</option>
+      <option value=6>Honda</option>
+      <option value=7>Jaguar</option>
+      <option value=8>Lexus</option>
+      <option value=9>Mazda</option>
+      <option value=10>Mecedes</option>
+      <option value=11>Mercury</option>
+      <option value=12>Nisson</option>
+      <option value=13>Pontiac</option>
+      <option value=14>Porche</option>
+      <option value=15>Saab</option>
+      <option value=16>Saturn</option>
+      <option value=17>Toyota</option>
+      <option value=18>VW</option>
+    </select>
+    <br>
+    <label for="MonthClaimed">Month Claimed</label>
+    <input type="number" id="MonthClaimed" name="MonthClaimed" min = "1" max = "12">[btw: 1 - 12]
+    <br>
+    <label for="DayOfWeek">Day of Week</label>
+    <input type="number" id="DayOfWeek" name="DayOfWeek" min = "1" max = "7">[btw: 1 - 7]
+    <br>
+    <label for="DayOfWeekClaimed">Day of Week Claimed</label>
+    <input type="number" id="DayOfWeekClaimed" name="DayOfWeekClaimed" min = "1" max = "7">[btw: 1 - 7]
+    <br>
+    <label for="WeekOfMonth">Week of Month</label>
+    <input type="number" id="WeekOfMonth" name="WeekOfMonth" min = "1" max = "5">[btw: 1 - 5]
+    <br>
+    <label for="DriverRating">Driver Rating</label>
+    <input type="number" id="DriverRating" name="DriverRating" min = "1" max = "4">[btw: 1 - 4]
+    <br>
+    <label for="NumberOfSuppliments">NumberOfSuppliments</label>
+    <input type="number" id="NumberOfSuppliments" name="NumberOfSuppliments" min = "0" max = "6">[btw: 0/2/4/6]
+    <br>
+    <label for="WeekOfMonthClaimed">Week of Month Claimed</label>
+    <input type="number" id="WeekOfMonthClaimed" name="WeekOfMonthClaimed" min = "1" max = "5">[btw: 1 - 5]
+    <br>
+    <label for="VehiclePrice">Vehicle Price</label>
+    <input type="number" id="VehiclePrice" name="VehiclePrice" min = "0" max = "5">[mapping: 
+    'less than 20000': 0,
+    '20000 to 29000' : 1,
+    '30000 to 39000': 2,
+    '40000 to 59000': 3,
+    '60000 to 69000': 4,
+    'more than 69000': 5]
+    <br>
+    <label for="PastNumberOfClaims">PastNumberOfClaims</label>
+    <input type="number" id="PastNumberOfClaims" name="PastNumberOfClaims" min = "0" max = "5">[btw: 0/1/3/5]
+    <br>
+    <label for="BasePolicy">Base Policy</label>
+    <input type="number" id="BasePolicy" name="BasePolicy" min = "0" max = "2">[mapping: 
+    'Collision': 0,
+    'Liability' : 1,
+    'All Perils': 2]
+    <br>
+    <label for="AgeOfVehicle">Vehicle Age</label>
+    <input type="number" id="AgeOfVehicle" name="AgeOfVehicle" min = "1" max = "99">[btw: 1 - 99]
+    <br>
+    <label for="AddressChange_Claim">Address Change Claim</label>
+    <input type="number" id="AddressChange_Claim" name="AddressChange_Claim" min = "0" max = "4">[btw: 0/1/2/3/4]
+    <br>
+    <label for="Fault">Fault</label>
+    <select id="Fault" name="Fault">
+      <option value=0>No</option>
+      <option value=1>Yes</option>
+    </select>
+    <br>
+    <label for="Deductible">Deductible</label>
+    <input type="number" id="Deductible" name="Deductible">
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
