@@ -1,0 +1,53 @@
+Dataset Features:
+| Feature Name           | Data Type | Description                                                                                                |
+|------------------------|-----------|------------------------------------------------------------------------------------------------------------|
+| Month                  | String    | Month when the accident occurred (e.g., Jan)                                                               |
+| WeekOfMonth            | Integer   | Week number (1–5) of the accident month                                                                    |
+| DayOfWeek              | String    | Day of the week of the accident (e.g., Monday)                                                             |
+| Make                   | String    | Vehicle manufacturer (e.g., Toyota, Pontiac)                                                               |
+| AccidentArea           | String    | Location where the accident occurred (Urban/Rural)                                                         |
+| DayOfWeekClaimed       | String    | Day of the week the insurance claim was submitted                                                          |
+| MonthClaimed           | String    | Month in which the claim was submitted                                                                     |
+| WeekOfMonthClaimed     | Integer   | Week of the month (1–5) of the insurance claim                                                             |
+| Sex                    | String    | Gender of the policyholder (Male/Female)                                                                   |
+| MaritalStatus          | String    | Policyholder’s marital status (e.g., Single, Married)                                                      |
+| Age                    | Integer   | Age of the policyholder                                                                                    |
+| Fault                  | String    | Indicates who was deemed at fault (Policy Holder / Third Party)                                            |
+| PolicyType             | String    | Combined descriptor of Vehicle Category and Base Policy                                                    |
+| VehicleCategory        | String    | Classification of the vehicle (Sedan/Sport/Utility)                                                        |
+| VehiclePrice           | String    | Vehicle price range                                                                                        |
+| FraudFound_P           | Integer   | Target class (0 = Non-Fraud, 1 = Fraud)                                                                    |
+| PolicyNumber           | Integer   | Unique identifier for the insurance policy                                                                 |
+| RepNumber              | Integer   | Identifier for the representative handling the claim                                                       |
+| Deductible             | Integer   | Amount paid by the policyholder before insurance payout                                                    |
+| DriverRating           | Integer   | Internal score reflecting the driver’s risk profile                                                        |
+| Days_Policy_Accident   | String    | Range indicating time from policy start to accident                                                        |
+| Days_Policy_Claim      | String    | Range indicating time between policy start and claim submission                                            |
+| PastNumberOfClaims     | String    | Range representing the number of previous claims made                                                      |
+| AgeOfVehicle           | String    | Age of the vehicle at the time of the accident                                                             |
+| AgeOfPolicyHolder      | String    | Age of the policyholder                                                                                    |
+| PoliceReportFiled      | Boolean   | Whether a police report was filed                                                                          |
+| WitnessPresent         | Boolean   | Whether a witness was present at the accident                                                              |
+| AgentType              | String    | Type of insurance agent involved (Internal/External)                                                       |
+| NumberOfSuppliments    | String    | Additional repair items beyond the initial estimate                                                        |
+| AddressChange_Claim    | String    | Range indicating how recently the claimant’s address was changed                                           |
+| NumberOfCars           | String    | Range indicating number of cars owned                                                                      |
+| Year                   | Integer   | Year in which the accident occurred                                                                        |
+| BasePolicy             | String    | Insurance base policy type (e.g., Liability, Collision)                                                    |
+
+Engineered Features:
+| Feature Name           | Data Type | Description                                                                                                                          |
+|------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------|
+| DaysToClaimRatio       | Float     | Ratio of Days_Policy_Claim to Days_Policy_Accident                                                                                   |
+| IsYoungDriver          | Integer   | Binary indicator showing whether the policyholder is younger than 21                                                                 |
+| IsOldVehicle           | Integer   | Binary indicator showing whether the vehicle is older than 5 years                                                                   |
+| AgeVehicleRatio        | Float     | Ratio of AgeOfPolicyHolder to AgeOfVehicle                                                                                           |
+| QuickClaim             | Integer   | Binary indicator for claims filed within 7 days of policy inception                                                                  |
+| NoPoliceReport         | Integer   | Binary indicator for no police report filed                                                                                          |
+| NoWitness              | Integer   | Binary indicator for no witness present at the accident scene                                                                        |
+| IsNewPolicy            | Integer   | Binary indicator for accident occurred within 30 days of policy start                                                                |
+| HighDeductible         | Integer   | Binary indicator for deductible above the dataset median                                                                             |
+| IsFrequentClaimant     | Integer   | Binary indicator for policyholders with more than two past claims                                                                    |
+| AddressChanged         | Integer   | Binary indicator for recently changed address                                                                                        |
+| RiskScore              | Integer   | Composite score combining fraud-related signals (QuickClaim, NoPoliceReport, NoWitness, IsNewPolicy, IsFrequentClaimant)             |
+| Make_frequency_encoded | Float     | Normalised frequency (0–1) showing how common each vehicle make is in the dataset                                                    |
