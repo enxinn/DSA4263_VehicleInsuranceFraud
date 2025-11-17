@@ -39,14 +39,14 @@ Engineered Features:
 | Feature Name           | Data Type | Description                                                                                                                          |
 |------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------|
 | DaysToClaimRatio       | Float     | Ratio of Days_Policy_Claim to Days_Policy_Accident                                                                                   |
-| IsYoungDriver          | Integer   | Binary indicator showing whether the policyholder is younger than 21                                                                 |
-| IsOldVehicle           | Integer   | Binary indicator showing whether the vehicle is older than 5 years                                                                   |
+| IsYoungDriver          | Boolean   | Whether the policyholder is younger than 21                                                                                          |
+| IsOldVehicle           | Boolean   | Whether the vehicle is older than 5 years                                                                                            |
 | AgeVehicleRatio        | Float     | Ratio of AgeOfPolicyHolder to AgeOfVehicle                                                                                           |
-| QuickClaim             | Integer   | Binary indicator for claims filed within 7 days of policy inception                                                                  |
-| NoPoliceReport         | Integer   | Binary indicator for no police report filed                                                                                          |
-| NoWitness              | Integer   | Binary indicator for no witness present at the accident scene                                                                        |
-| IsNewPolicy            | Integer   | Binary indicator for accident occurred within 30 days of policy start                                                                |
-| HighDeductible         | Integer   | Binary indicator for deductible above the dataset median                                                                             |
-| IsFrequentClaimant     | Integer   | Binary indicator for policyholders with more than two past claims                                                                    |
-| AddressChanged         | Integer   | Binary indicator for recently changed address                                                                                        |
+| QuickClaim             | Boolean   | Whether the claim was filed within 7 days of policy inception                                                                        |
+| NoPoliceReport         | Boolean   | Whether no police report was filed                                                                                                   |
+| NoWitness              | Boolean   | Whether no witness was present at the accident scene                                                                                 |
+| IsNewPolicy            | Boolean   | Whether the accident occurred within 30 days of policy start                                                                         |
+| HighDeductible         | Boolean   | Whether the deductible was above the dataset median                                                                                  |
+| IsFrequentClaimant     | Boolean   | Whether the policyholder has made more than two past claims                                                                          |
+| AddressChanged         | Boolean   | Whether the claimant recently changed address                                                                                        |
 | RiskScore              | Integer   | Composite score combining fraud-related signals (QuickClaim, NoPoliceReport, NoWitness, IsNewPolicy, IsFrequentClaimant)             |
