@@ -1,6 +1,6 @@
 <html>
 <body>
-    <h3>Income Prediction Form</h3>
+    <h3>Fraud Prediction Form</h3>
 
 <div>
   <form action="/result" method="POST">
@@ -82,12 +82,12 @@
     <input type="number" id="AgeOfVehicle" name="AgeOfVehicle" min = "1" max = "99">[btw: 1 - 99]
     <br>
     <label for="AddressChange_Claim">Address Change Claim</label>
-    <input type="number" id="AddressChange_Claim" name="AddressChange_Claim" min = "0" max = "4">[btw: 0/1/2/3/4]
+    <input type="number" id="AddressChange_Claim" name="AddressChange_Claim" min = "0" max = "4">[btw: 0-4]
     <br>
     <label for="Fault">Fault</label>
     <select id="Fault" name="Fault">
-      <option value=0>No</option>
-      <option value=1>Yes</option>
+      <option value=0>Policy Holder</option>
+      <option value=1>Third Party</option>
     </select>
     <br>
     <label for="Deductible">Deductible</label>
