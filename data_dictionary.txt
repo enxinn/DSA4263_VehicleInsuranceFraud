@@ -50,4 +50,3 @@ Engineered Features:
 | IsFrequentClaimant     | Integer   | Binary indicator for policyholders with more than two past claims                                                                    |
 | AddressChanged         | Integer   | Binary indicator for recently changed address                                                                                        |
 | RiskScore              | Integer   | Composite score combining fraud-related signals (QuickClaim, NoPoliceReport, NoWitness, IsNewPolicy, IsFrequentClaimant)             |
-| Make_frequency_encoded | Float     | Normalised frequency (0–1) showing how common each vehicle make is in the dataset                                                    |
