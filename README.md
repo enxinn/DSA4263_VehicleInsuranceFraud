@@ -1,3 +1,10 @@
+# Table of Contents
+
+- [Abstract](#abstract)
+- [Repository Structure](#repository-structure)
+- [Flask Web Application](#flask)
+- [Docker Deployment](#docker)
+
 # Abstract
 Insurance fraud poses a major challenge to the industry, leading to significant financial losses, higher premiums and heavy manual investigation workload. To tackle this issue, our project develops a machine learning model to detect fraudulent vehicle insurance claims using a dataset containing 15,420 records. The dataset is highly imbalanced, with only around 6% fraudulent cases, making accurate detection difficult. 
 
