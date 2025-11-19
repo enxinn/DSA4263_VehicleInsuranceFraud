@@ -33,7 +33,8 @@ DSA4263_VehicleInsuranceFraud/
 ```
 
 ## How to Run This Project
-To execute the entire machine learning workflow, run main.ipynb.
+To execute the entire machine learning workflow, run main.ipynb from the project root. This notebook automatically runs all other notebooks in the correct order. 
+
 Running this pipeline will perform:
 - Data preprocessing, exploratory data analysis, and resampling
 - Training and validation of multiple machine learning models
