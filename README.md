@@ -7,7 +7,7 @@
 - [Docker Deployment](#docker-deployment)
 
 ## Abstract
-Insurance fraud poses a major challenge to the industry, leading to significant financial losses, higher premiums and heavy manual investigation workload. To tackle this issue, our project develops a machine learning model to detect fraudulent vehicle insurance claims using a dataset containing 15,420 records. The dataset is highly imbalanced, with only around 6% fraudulent cases, making accurate detection difficult. 
+Insurance fraud poses a major challenge to the industry, leading to significant financial losses, higher premiums and heavy manual investigation workload. To tackle this issue, our project develops a machine learning model to detect fraudulent vehicle insurance claims using a [dataset](https://www.kaggle.com/datasets/shivamb/vehicle-claim-fraud-detection) containing 15,420 records. The dataset is highly imbalanced, with only around 6% fraudulent cases, making accurate detection difficult. 
 
 After data cleaning, feature engineering, and exploratory data analysis, multiple resampling techniques were tested to handle imbalance, with SMOTEENN selected for providing the best minority-class detection. Several models were then trained, including Logistic Regression, Decision Tree, Random Forest, LightGBM, XGBoost and SVC. Among all models, a tuned LightGBM achieved the strongest performance, with a PR-AUC of 0.69, precision of 0.60 and recall of 0.67 on the test set, showing a good balance between identifying fraud and controlling false alarms.
 
