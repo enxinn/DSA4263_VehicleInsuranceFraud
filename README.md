@@ -35,7 +35,7 @@ DSA4263_VehicleInsuranceFraud/
 ```
 
 ## How to Run This Project
-To execute the entire machine learning workflow, run [main.ipynb](https://github.com/enxinn/DSA4263_VehicleInsuranceFraud/blob/fa021e614d21f68ae5ecf9f51b3f7354a1aa79de/main.ipynb) from the project root. This notebook automatically runs all other notebooks in the correct order. 
+To execute the entire machine learning workflow, run [main.ipynb](https://github.com/enxinn/DSA4263_VehicleInsuranceFraud/blob/fa021e614d21f68ae5ecf9f51b3f7354a1aa79de/main.ipynb) from the project root. Before running, please install the required packages using: ```pip install -r requirements_full_pipeline.txt```. This notebook automatically runs all other notebooks in the correct order. 
 
 Running this pipeline will perform:
 - Data preprocessing, exploratory data analysis, and resampling
