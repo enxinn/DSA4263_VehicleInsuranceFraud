@@ -22,6 +22,7 @@ DSA4263_VehicleInsuranceFraud/
 ├── data/
 │   ├──  processed/              # Cleaned / engineered datasets
 │   └──  raw/                    # Original fraud_oracle.csv
+├── main.ipynb/                  # Run this to run all notebooks
 ├── models/                      # Trained final model
 ├── notebooks/                   # Jupyter notebooks
 ├── templates/
