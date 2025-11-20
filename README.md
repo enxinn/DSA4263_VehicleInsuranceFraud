@@ -31,7 +31,7 @@ DSA4263_VehicleInsuranceFraud/
 ├── data_dictionary.txt
 ├── docker-compose.yml
 ├── requirements_full_pipeline.txt   # The requirements file for reproducing the entire workflow
-└── requirements.txt                 # The requirements file for final machine learning model
+└── requirements.txt                 # The requirements file for Docker
 ```
 
 ## How to Run This Project
