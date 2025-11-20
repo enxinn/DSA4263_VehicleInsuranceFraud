@@ -12,3 +12,4 @@ shap
 ipykernel
 nbformat
 nbclient
+optuna
