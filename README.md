@@ -20,17 +20,18 @@ Overall, the model demonstrates strong potential to support fraud investigators,
 DSA4263_VehicleInsuranceFraud/
 ├── README.md 
 ├── data/
-│   ├──  processed/              # Cleaned / engineered datasets
-│   └──  raw/                    # Original fraud_oracle.csv
-├── main.ipynb/                  # Run this to run all notebooks
-├── models/                      # Trained final model
-├── notebooks/                   # Jupyter notebooks
+│   ├──  processed/                  # Cleaned / engineered datasets
+│   └──  raw/                        # Original fraud_oracle.csv
+├── main.ipynb/                      # Run this to run all notebooks
+├── models/                          # Trained final model
+├── notebooks/                       # Jupyter notebooks
 ├── templates/
 ├── Dockerfile
 ├── app.py
 ├── data_dictionary.txt
 ├── docker-compose.yml
-└── requirements.txt
+├── requirements_full_pipeline.txt   # The requirements file for reproducing the entire workflow
+└── requirements.txt                 # The requirements file for final machine learning model
 ```
 
 ## How to Run This Project
